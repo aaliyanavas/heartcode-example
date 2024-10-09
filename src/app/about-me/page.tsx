@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import Naruto from "@/app/assets/naruto2.jpg";
+import Sudoku from "@/app/assets/sudoku.jpeg";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Terminal } from "lucide-react";
 
@@ -18,7 +18,7 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <Image src={Naruto} alt="1"/>
+                <Image src={Sudoku} alt="1"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
                     Aaliya
