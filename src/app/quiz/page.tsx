@@ -7,7 +7,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
+import { toast, useToast } from "@/hooks/use-toast";
 
 const FormSchema = z.object({
 	name: z.string({
@@ -82,6 +82,20 @@ export default function Quiz() {
     	</Form>
 	)
 }
+function onSubmit(data: z.infer<typeof FormSchema>) {
+  if (data.question1 === "yes") {
+      toast({
+          title: `Congratulations ${data.name}`,
+          description: "You are a drug dealer",
+      })
+  } else {
+      toast({
+          title: `Thank you ${data.name}`,
+          description: "Unfortunately you are not a drug dealer",
+      })
+  }
+}
+
 
 // export default function Quiz() {
 //   return (
