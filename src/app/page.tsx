@@ -20,6 +20,7 @@ export default function Home() {
     	<h1 className="font-bold text-5xl">Taking drugs is not
       	<FlipWords words={words}/>
     	</h1>
+      <h2 className="text-sm text-center">Don't be an idiot and ruin your life</h2>
   	</div>
 	</div>
   )
