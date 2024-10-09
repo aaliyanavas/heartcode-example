@@ -22,6 +22,7 @@ const FormSchema = z.object({
 
 export default function Quiz() {
 	const { toast } = useToast();
+  console.log(useToast);
 
 	const form = useForm<z.infer<typeof FormSchema>>({
     	resolver: zodResolver(FormSchema)
