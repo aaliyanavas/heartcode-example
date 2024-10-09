@@ -38,7 +38,6 @@ export default function RootLayout({
         >
           <NavigationBar/>
           {children}
-          <Toaster/>
         </ThemeProvider>
       </body>
     </html>
