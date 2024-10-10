@@ -23,7 +23,7 @@ export function NavigationBar() {
             <NavigationMenuItem>
                 <Link href="/about-me" legacyBehavior passHref>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                        About me
+                        About Me
                     </NavigationMenuLink>
                 </Link>
             </NavigationMenuItem>
