@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import Sudoku from "@/app/assets/sudoku.jpeg";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Terminal } from "lucide-react";
 
 export default function AboutMe() {
@@ -27,11 +26,6 @@ export default function AboutMe() {
                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to do sudoku!</div>
             </CardContent>
         </Card>
-        <Alert>
-            <Terminal className="h-4 w-4"/>
-            <AlertTitle>Heads up</AlertTitle>
-            <AlertDescription>I have added an alert</AlertDescription>
-        </Alert>
     </div>
   );
 }
