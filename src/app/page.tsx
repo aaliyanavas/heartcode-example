@@ -14,7 +14,7 @@ export default function Home(){
   );
 }
 
-import { FlipWords } from "@/components/ui/flip-words";
+// import { FlipWords } from "@/components/ui/flip-words";
 // import { db } from "@/db/index"
 // import { users } from "@/db/schema"
 
